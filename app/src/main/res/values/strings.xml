@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">NoApplet</string>
+    <string name="main_menu_1">Check source code</string>
+    <string name="detail_app_name">App Name</string>
+    <string name="detail_description">Description</string>
+    <string name="detail_title">Title</string>
+    <string name="detail_target_url">Target Url</string>
+    <string name="detail_is_applet">IsAppletRequest</string>
+    <string name="detail_is_applet_yes">Yes</string>
+    <string name="detail_is_applet_no">No</string>
+    <string name="none_or_decode_failure">None/Decode failure</string>
+    <string name="permission_denied_title">Permission</string>
+    <string name="permission_denied_message">Read External Storage permission denied, this share link\'s image is local(%s), can not load file, Pls grant permission(Just read)</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_grant">Grant</string>
+    <string name="toast_step_2">Please select regular QQ this time</string>
+    <string name="xposed_description">A module to retrieve URL when opening the QQ applet. Developed by @Decontamination(Coolapk)</string>
+    <string name="xposed_title">CurrentApplet</string>
+    <string name="xposed_applet_name">Applet name</string>
+    <string name="xposed_raw_info">Raw MiniApp Info</string>
+    <string name="xposed_applet_url">Applet Url</string>
+    <string name="xposed_bilibili">Possible Bilibili Url</string>
+    <string name="xposed_zhihu">Possible Zhihu Url</string>
+    <string name="main_about">About</string>
+    <string name="main_about_content">This is a small tool for convert your QQ Applet share link to normal
+    link actively and export the existed applet info\nDeveloped by: Alcatraz(Coolapk)\nIdea by: Neuron(Coolapk),as always, this program is free and no ads</string>
+    <string name="main_tutorial_title">Tutorial</string>
+    <string name="main_tutorial_content">1.Active sharing\nYou can find \'NoApplet\' in the choose list, select it, check the share content and click the green button, This time PLS SELECT NORMAL QQ, then you are done\n
+    2.Export Existed\nStart the target applet, and you will see the AlertDialog</string>
+    <string name="main_warning_title">Warning</string>
+    <string name="main_warning_content">For latest bilibili, it will create image locally under /sdcard/tmp, if you have activated Storage Redirect, this will cause share failure no matter if you use this app, there may be other app with the same issue</string>
+    <string name="toast_copied">Copied</string>
+</resources>

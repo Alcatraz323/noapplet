@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">远离小程序</string>
+    <string name="main_menu_1">查看源码</string>
+    <string name="detail_app_name">来源</string>
+    <string name="detail_description">描述</string>
+    <string name="detail_title">标题</string>
+    <string name="detail_target_url">目标地址</string>
+    <string name="detail_is_applet">当前链接是否正在请求小程序</string>
+    <string name="detail_is_applet_yes">是</string>
+    <string name="detail_is_applet_no">否</string>
+    <string name="none_or_decode_failure">无或解码错误</string>
+    <string name="permission_denied_title">权限</string>
+    <string name="permission_denied_message">读取权限被禁止，当前链接图片位于本地，无法载入，请授予读取权限</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_grant">授予</string>
+    <string name="toast_step_2">请选择正常的QQ</string>
+    <string name="xposed_description">导出QQ小程序链接 来自@Decontamination(Coolapk)</string>
+    <string name="xposed_title">当前小程序</string>
+    <string name="xposed_applet_name">小程序名称</string>
+    <string name="xposed_raw_info">原始配置信息</string>
+    <string name="xposed_applet_url">小程序链接</string>
+    <string name="xposed_bilibili">可能的Bilibili原始链接</string>
+    <string name="xposed_zhihu">可能的知乎原始链接</string>
+    <string name="main_about">关于</string>
+    <string name="main_about_content">这是一个用来将QQ小程序分享链接转化为非小程序链接，或是将聊天中小程序信信息导出的小工具(Xposed)(比如将别人发给你的小程序转化为网页地址)\n欢迎反馈到@Decontamination(Coolapk)特别鸣谢@神经元(Coolapk)提供想法\n以及@Mr_Dennis(Coolapk)/AudioHQ项目群员测试</string>
+    <string name="main_tutorial_title">教程</string>
+    <string name="main_tutorial_content">1.主动分享\n你可以在分享列表看见本应用,选择本应用，确认分享信息后点击右边绿色按钮，这次选择正常的QQ！！！即可\n
+    2.获取小程序连接信息(Xposed)\n在QQ中启动目标小程序，将会出现对话框，若需分析请点击"是"</string>
+    <string name="main_warning_title">注意</string>
+    <string name="main_warning_content">对于新版bilibili,分享时bilibili将会把图片存在/sdcard/tmp若你启动了存储空间隔离(重定向),将会导致分享失败(无论用不用本应用),目前只遇到bilibili有此问题,但不排除其他程序出现相同问题可能</string>
+    <string name="toast_copied">已复制</string>
+</resources>
