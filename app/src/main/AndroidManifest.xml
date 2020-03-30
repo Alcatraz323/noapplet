@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.alcatraz.noapplet">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +22,7 @@
         <meta-data
             android:name="xposedminversion"
             android:value="54" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,24 +30,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:exported="true"
-            android:name=".XposedAppletActivity" />
+            android:name=".XposedAppletActivity"
+            android:exported="true" />
         <activity
-            android:exported="true"
-            android:name=".ActiveShareActivity" >
+            android:name=".ActiveShareActivity"
+            android:exported="true">
             <intent-filter android:scheme="http">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="mqq" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="mqqapi" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".XposedPopUpActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/alertDialogActivity" />
     </application>
 
 </manifest>
