@@ -5,9 +5,9 @@ android {
     defaultConfig {
         applicationId "io.alcatraz.noapplet"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 3
-        versionName "0.7_2020_3_30_internal_fix_taichi_yin"
+        versionName "0.7_2020_4_8_target_api"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
