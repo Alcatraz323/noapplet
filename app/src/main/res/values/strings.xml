@@ -21,6 +21,7 @@
     <string name="xposed_applet_url">Applet Url</string>
     <string name="xposed_bilibili">Possible Bilibili Url</string>
     <string name="xposed_zhihu">Possible Zhihu Url</string>
+    <string name="xposed_weibo">Possible Weibo Url</string>
     <string name="xposed_popup_message">Analyse current applet?</string>
     <string name="main_about">About</string>
     <string name="main_about_content">This is a small tool for convert your QQ Applet share link to normal

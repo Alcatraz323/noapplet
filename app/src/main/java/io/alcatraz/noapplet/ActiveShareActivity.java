@@ -176,6 +176,12 @@ public class ActiveShareActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
+
     @SuppressWarnings("ConstantConditions")
     public String decodeKeyValue(String key) {
         try {

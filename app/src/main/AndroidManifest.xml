@@ -23,16 +23,20 @@
             android:name="xposedminversion"
             android:value="54" />
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:excludeFromRecents="true"
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:excludeFromRecents="true"
             android:name=".XposedAppletActivity"
             android:exported="true" />
         <activity
+            android:excludeFromRecents="true"
             android:name=".ActiveShareActivity"
             android:exported="true">
             <intent-filter android:scheme="http">
@@ -53,6 +57,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:excludeFromRecents="true"
             android:name=".XposedPopUpActivity"
             android:exported="true"
             android:launchMode="singleTask"

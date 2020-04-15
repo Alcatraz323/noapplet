@@ -40,6 +40,8 @@ public class XposedAppletActivity extends AppCompatActivity {
     TextView txv_bili_gen;
     RelativeLayout zhihu_panel;
     TextView txv_zhihu_gen;
+    RelativeLayout weibo_panel;
+    TextView txv_weibo_gen;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -60,6 +62,8 @@ public class XposedAppletActivity extends AppCompatActivity {
         txv_bili_gen = findViewById(R.id.xposed_bili_generate);
         zhihu_panel = findViewById(R.id.xposed_zhihu_element);
         txv_zhihu_gen = findViewById(R.id.xposed_zhihu_generate);
+        weibo_panel = findViewById(R.id.xposed_weibo_element);
+        txv_weibo_gen = findViewById(R.id.xposed_weibo_generate);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -117,6 +121,24 @@ public class XposedAppletActivity extends AppCompatActivity {
                 }
             });
         }
+
+        if (name.equals("微博")) {
+            txv_weibo_gen.setText(generateWeiboLink());
+            weibo_panel.setVisibility(View.VISIBLE);
+            weibo_panel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(txv_weibo_gen.getText().toString())));
+                }
+            });
+            weibo_panel.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    Utils.copyToClipboard(txv_weibo_gen.getText().toString(), XposedAppletActivity.this);
+                    return true;
+                }
+            });
+        }
     }
 
     @Override
@@ -127,6 +149,12 @@ public class XposedAppletActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
     }
 
     private void initData() {
@@ -148,6 +176,12 @@ public class XposedAppletActivity extends AppCompatActivity {
         } else {
             return "https://www.bilibili.com/video/BV" + process_1[0];
         }
+    }
+
+    public String generateWeiboLink(){
+        String[] process_0 = app_url.split("=");
+        String[] process_1 = process_0[1].split("&");
+        return "https://m.weibo.cn/detail/" + process_1[0];
     }
 
     public String generateZhihuLink() {

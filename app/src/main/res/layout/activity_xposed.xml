@@ -365,6 +365,61 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </LinearLayout>
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/xposed_weibo_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/xposed_weibo_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    android:tint="@color/base_gray_tint"
+                    app:srcCompat="@drawable/ic_code_black_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/xposed_weibo_icon"
+                    android:layout_toRightOf="@id/xposed_weibo_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xposed_zhihu"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch" />
+
+                    <TextView
+                        android:id="@+id/xposed_weibo_generate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
