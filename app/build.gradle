@@ -6,8 +6,8 @@ android {
         applicationId "io.alcatraz.noapplet"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 4
-        versionName "0.8_2020_4_15"
+        versionCode 5
+        versionName "0.9_2020_5_1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }

@@ -174,7 +174,7 @@ public class XposedAppletActivity extends AppCompatActivity {
         } else if (app_url.contains("epid")) {
             return "https://www.bilibili.com/bangumi/play/ep" + process_1[0];
         } else {
-            return "https://www.bilibili.com/video/BV" + process_1[0];
+            return "https://www.bilibili.com/video/" + process_1[0];
         }
     }
 
